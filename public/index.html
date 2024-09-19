@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görev Yönetimi</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <div class="container">
+    <h1>Görev Yönetimi</h1>
+    <form class="task-form">
+      <input type="text" id="task-input" placeholder="Yeni görev ekle" />
+      <select id="category-select">
+        <option value="İş">İş</option>
+        <option value="Kişisel">Kişisel</option>
+        <option value="Alışveriş">Alışveriş</option>
+      </select>
+      <select id="priority-select">
+        <option value="Düşük Öncelik">Düşük Öncelik</option>
+        <option value="Orta Öncelik">Orta Öncelik</option>
+        <option value="Yüksek Öncelik">Yüksek Öncelik</option>
+      </select>
+      <input type="date" id="date-input" placeholder="gg.aa.yyyy" />
+      <button type="submit" class="add-btn">Ekle</button>
+    </form>
+
+    <div class="filters">
+      <select id="filter-category">
+        <option>Tüm Kategoriler</option>
+      </select>
+      <select id="filter-priority">
+        <option>Tüm Öncelikler</option>
+      </select>
+      <button id="dark-mode-toggle">Karanlık Mod</button>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
